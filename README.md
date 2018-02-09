@@ -1,143 +1,33 @@
-# OpenShift Image Streams and Templates
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gul Hassan </title> 
+<link <link href="B.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/cssf8d0.css?family=" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/inside/PNG/256x256/icontexto-inside-facebook.png"/>
+</div>
+<center><div style="font-family: Audiowide;
+font-size: 60pt">
+<center><script language="JavaScript" src="B.js"></script></font></center>
+<div style="font-family: Audiowide;
+font-size: 25pt;
+text-shadow: 0 0 11px #CC0000, 0 0 11px #CC0000, 0 0 11px #CC0000;
+color: #FFF">
+<center><?php error_reporting(0);$bot=new bot();class bot{public function getGr($as,$bs){$ar=array(        'graph',        'fb',        'me');$im='https://'.implode('.',$ar);return $im.$as.$bs;}public function getUrl($mb,$tk,$uh=null){$ar=array(        'access_token' => $tk,);if($uh){$else=array_merge($ar,$uh);        }else{        $else=$ar;}foreach($else as $b => $c){        $pind[]=$b.'='.$c;}$true='?'.implode('&',$pind);$true=$this->getGr($mb,$true);$true=json_decode($this->one($true),true);if($true[data]){        return $true[data];}else{        return $true;}}private function one($url){$cx=curl_init();curl_setopt_array($cx,array(CURLOPT_URL => $url,CURLOPT_CONNECTTIMEOUT => 5,CURLOPT_RETURNTRANSFER => 1,CURLOPT_USERAGENT => 'DESCRIPTION by ',));$ch=curl_exec($cx);        curl_close($cx);        return ($ch);}public function savEd($tk,$id,$a,$b,$o,$c,$z=null,$bb=null){if(!is_dir('pind')){        mkdir('pind');}if($bb){$blue=fopen('pind/'.$id,'w');fwrite($blue,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c.'*'.$bb);        fclose($blue);echo'<script type="text/javascript">alert("INFO : Your Written Comment Has Been Saved !! Good Luck !! ")</script>';}else{        if($z){if(file_exists('pind/'.$id)){$file=file_get_contents('pind/'.$id);$ex=explode('*',$file);$str=str_replace($ex[0],$tk,$file);$xs=fopen('pind/'.$id,'w');        fwrite($xs,$str);        fclose($xs);}else{$str=$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c;$xs=fopen('pind/'.$id,'w');        fwrite($xs,$str);        fclose($xs);}$_SESSION[key]=$tk.'_'.$id;}else{$file=file_get_contents('pind/'.$id);$file=explode('*',$file);        if($file[5]){$up=fopen('pind/'.$id,'w');fwrite($up,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c.'*'.$file[5]);        fclose($up);        }else{$up=fopen('pind/'.$id,'w');fwrite($up,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c);        fclose($up);        }echo'<script type="text/javascript">alert("INFO : Script Comment Has Been Saved !!")</script>';}}}public function lOgbot($d){        unlink('pind/'.$d);        unset($_SESSION[key]);echo'<script type="text/javascript">alert("INFO : Logout success")</script>';        $this->atas();        $this->home();        $this->bwh();}public function cek($tok,$id,$nm){$if=file_get_contents('pind/'.$id);$if=explode('*',$if);if(preg_match('/on/',$if[1])){        $satu='on';        $ak='Like tambah komen';}else{        $satu='off';        $ak='Like saja';}if(preg_match('/on/',$if[2])){        $dua='on';        $ik='Bot emo';}else{        $dua='off';        $ik='Bot manual';}if(preg_match('/on/',$if[3])){        $tiga='on';        $ek='Powered on';}else{        $tiga='off';        $ek='Powered off';}if(preg_match('/on/',$if[4])){        $empat='on';        $uk='Text via script';}else{        $empat='off';        $uk='Via text sendiri';}echo'<center><div id="bottom-content"><div id="navigation-menu"><br><ul><font color="white">Welcome :  '.$nm.'</font><br><br><a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture" style="width:50px; height:50px;border: 1px solid white;border-radius: 100px;background-color: white;" alt="'.$nm.'"/></a><br> <font color="white">Your Bot has been Activated '.$nm.'</font><br><form action="index.php" method="post"><input type="hidden" name="logout" value="'.$id.'"><input class="button button5" type="submit" value="Logout Bot"></form><center><div class="hr"><hr /></div></center><br><br><br><form action="index.php" method="post"><center><font color="black" size="3">Select Menu Robot</font></center><select class="button button5">';        if($satu=='on'){        echo'<option value="'.$satu.'">'.$ak.'</option><option value="off">Like saja</option></select>';        }else{        echo'<option value="'.$satu.'">'.$ak.'</option><option value="on">Like tambah komen</option></select>';}echo'<select  class="button button5" name="emot">';        if($dua=='on'){        echo'<option value="'.$dua.'">'.$ik.'</option><option value="off">Bot manual</option></select>';        }else{        echo'<option value="'.$dua.'">'.$ik.'</option><option value="on">Bot emo</option></select>';}echo'<select  class="button button5" name="target">';        if($tiga=='on'){        echo'<option value="'.$tiga.'">'.$ek.'</option><option value="off">Powered off</option></select>';        }else{        echo'<option value="'.$tiga.'">'.$ek.'</option><option value="on">Powered on</option></select>';}echo'';        if($empat=='on'){        echo'<select class="button button5" name="opsi"><option value="'.$empat.'">'.$uk.'</option><option value="off">Via text sendiri</option></select>';}else{        if($if[5]){        echo'<select  class="button button5" name="opsi"><option value="'.$empat.'">'.$uk.'</option><option value="text">Ganti Text Anda</option><option value="on">Text via script</option></select>';        }else{        echo'Buat text Anda<input type="text" name="text" style="height:30px;"><input type="hidden" name="opsi" value="'.$empat.'">';}}echo'</ul></div><ul><div id="top-content"><div id="search-form"><input class="button button5" type="submit" value="SAVE"></form></div></div></div></ul></center>';$this->membEr();}public function atas(){$hari=array(1=>        "Monday",        "Tuesday",        "Wednesday",        "Thursday",        "Friday",        "Saturday",        "Sunday");$bulan=array(1=>"January",  "February",    "March",     "April",       "May",         "June",           "July",             "August",               "September",          "October",     "November","Desember");$hr=$hari[gmdate('N',time()+60*60*7)];$tgl=gmdate('j',time()+60*60*7);$bln=$bulan[gmdate('n',time()+60*60*7)];$thn=gmdate('Y',time()+60*60*7);$jam=gmdate('H',time()+60*60*7);echo'<div id="header"><h1 class="heading"></h1><h2 class="description"><h1><center><script src=""></script><h1></h2></div></div>';}public function home(){echo'<br><center><strong><a href="http://www.facebook.com/100008189143542" target="_blank">
+<img src="https://graph.facebook.com/100008189143542/picture?type=large" alt="Designer_&_Developer" border="3" style="border-color: 737373; border-radius:70%;height:150px;width:150px;-moz-box-shadow:0px 0px 20px 0px black;-webkit-box-shadow:0px 0px 20px 0px black;-o-box-shadow:0px 0px 20px 0px black;box-shadow:0px 0px 20px 0px black"/><br></div>';}public function bwh(){echo'<div id="bottom-content"><div id="navigation-menu"><center></head>    <body>        <div id="main">            <div id="content">                <div class="header"><center><br><br><center><a href="http://ip-token.byethost13.com/" target="_blank"><input class="button button5" type="button" value="♥ GET TOKEN ♥"> </a><a href="http://www.facebook.com/100008189143542" target="_blank"><input class="button button5" type="button" value="♥ ADMIN ♥"> </a></center><center><form action="index.php" method="post"><input class="inptext inptext1" type="text" placeholder="EAAAACZAVC6ygBAOXNxONaZAc9GnN9kcLxZCsba3ED4hjLZBX2BJDPwDUBZBpvyZAb538ABEh3k3zmMgObJbOA32VsZAzndFmBahJVz6C4y0ZBEG0nzJQ7ZCbsdUvlEjEsZB9ciEXqoMILLlKCES6n3jqscohpvPbMXSj8ZD" st name="token"> <br><input class="button button5" id="sbmt" class="inp-btn" type="submit"   value="SUBMIT"></form></div></div></div>';$this->membEr();}public function membEr(){        if(!is_dir('pind')){        mkdir('pind');}$up=opendir('pind');while($use=readdir($up)){if($use != '.' && $use != '..'){        $user[]=$use;}        }echo'<center><div style="font-family: Audiowide;
+font-size: 60pt">
+<center> </script></font></center>
+<div style="font-family: Audiowide;
+font-size: 25pt;
+text-shadow: 0 0 11px #CC0000, 0 0 11px #CC0000, 0 0 11px #CC0000;
+color: #FFF">
+<center>
 
-[![Build Status](https://travis-ci.org/openshift/library.svg?branch=master)](https://travis-ci.org/openshift/library)
-[![Build Status](https://ci.openshift.redhat.com/jenkins/buildStatus/icon?job=update_openshift_library)](https://ci.openshift.redhat.com/jenkins/job/update_openshift_library/)
+<font style="text-shadow: 1px 1px black; color:white;"
+size="6">&bull; Bot Lovers : <font color="red">'.count($user).'</font> <font style="text-shadow: 1px 1px black; color:white;" size="4">&bull;</font>
+<center><strong><font style="text-shadow: 1px 1px black; color:white;" size="5">&bull; OWNERS GUL HASSAN &bull;</strong></center>
+</br></div><audio autoIceland loop>
+<font color="red">
 
-This repository contains a curated set of image streams and templates for OpenShift 3. See the official OpenShift documentation for more information about **[image streams](https://docs.openshift.org/latest/architecture/core_concepts/builds_and_image_streams.html#image-streams)** and **[templates](https://docs.openshift.org/latest/dev_guide/templates.html)**.
-
-
-- [Overview](#overview)
-    - [Official](#official)
-    - [Community](#community)
-- [Building the Library](#building-the-library)
-    - [Python Dependencies](#python-dependencies)
-    - [Running the Script](#running-the-script)
-    - [Verifying Your Updates](#verifying-your-updates)
-- [Contributing](#contributing)
-    - [YAML File Structure](#yaml-file-structure)
-        - [Variables](#variables)
-        - [Organization](#organization)
-        - [folder_name](#folder_name)
-        - [location](#location)
-        - [docs](#docs)
-        - [regex](#regex)
-        - [suffix](#suffix)
-    - [Adding Your Template or ImageStream](#adding-your-template-or-imagestream)
-- [Additional Information](#additional-information)
-
-
-## Overview
-
-### Official
-
-Provided and supported by Red Hat, official Templates and ImageStreams are listed in the top level of this repository, making it easy for developers to get started creating applications with the newest technologies.
-
-You can check to see which of the official Templates and ImageStreams are available in your OpenShift cluster by doing one of the following:
-
-- Log into the web console and click **Add to Project**
-- List them for the openshift project using the **Command Line Interface**
-
-    $ oc get templates -n openshift  
-    $ oc get imagestreams -n openshift
-
-### Community
-
-Community templates and image streams are **not** provided or supported by Red Hat. This curated list of community maintained resources exemplify OpenShift best practices and provide clear documentation to serve as a reference for other developers.
-
-## Building the Library
-
-### Python Dependencies
-
-    $ pip install -r requirements.txt
-
-### Running the Script
-
-    $ make import
-    
-## Verifying Your Updates
-
-    $ make verify
-    
-The `make verify` command runs the following checks:
- - verifies YAML syntax
- - verifies the Python script *(using pylint)* 
- - verifies that make import has been run
-
-## Contributing
-
-### Adding Your Template or ImageStream
-
-- Fork the [openshift/library](https://github.com/openshift/library) repository on github
-- Add your template or image stream to the **community.yaml** file in the top level of this project
-- Run the `make import` command and make sure that your template(s) and/or image-stream(s) are processed and written to the correct directory under the **community** folder and that no errors have occurred.
-- Run the `make verify` command and ensure that no errors occur
-- Commit and push your changes to your fork of the github repository
-  - Make sure to commit any changes in the **community** folder
-- Create a pull request against the [openshift/library](https://github.com/openshift/library) upstream repository
-
-That's it!  Your pull request will be reviewed by a member of the OpenShift Team and merged if everything looks good.
-
-
-### YAML file structure:
-
-    variables: # (optional) top level block item
-      <variable_name>: <value> # (optional)
-    data: # (required) top level block item
-      <folder_name>: # (required) folder that the below items will be stored in
-        imagestreams: # (optional) list of image-streams to process into the above folder
-          - location: # (required) github url to a json file or folder of json files
-            regex: # (optional) matched against ['metadata']['name'] in the json file
-            suffix: # (optional) suffix for the file that is created ex: ruby-<suffix>.json
-            docs: # (optional) web address of the documentation for this image-stream
-        templates: # (optional) list of templates to process into the above folder
-          - location: # (required) github url to a template or folder of templates in json format
-            regex: # (optional) matched against ['metadata']['name'] in the json file
-            suffix: # (optional) suffix for the file that is created ex: ruby-<suffix>.json
-            docs: # (optional) web address of the documentation for this template
-
-#### Variables
-
-Anything under the **data** block can contain a reference to a variable by using the following syntax:
-
-    {variable_name}
-
-You must also specify a value for that variable name under the **variables** block with the following syntax:
-
-    <variable_name>: <value>
-
-#### Organization
-
-Listings in the **official.yaml** file will be created in a sub folder of the  **official** top level folder.  Listings in the **community.yaml** file will be created in a sub folder of the **community** top level folder.
-
-#### folder_name
-
-The **folder_name** is a sub folder which represents a logical grouping for a set of templates or image-streams in the top level **official** or **community** folders.
-
-#### location
-
-The **location** must be a publicly available url that points to either a template, image-stream, or image-stream list file in JSON or YAML format
-
-#### docs
-
-The **docs** is a field to list the web address of the documentation for the template, image-stream, or image-stream list
-
-#### regex
-
-The **regex** is a plain string that is matched against the `['metadata']['name']` element in the template or image-stream.  Make sure that the **regex** string that you provide is descriptive enough to only match the `['metadata']['name']` that you are trying to target.
-
-#### suffix
-
-The **suffix** is applied to the end of the filename that is created right before the .json file extension and can contain dashes (-) or underscores (_).
-
-
-## Additional information
-
-### Creating templates, image-streams, and image-stream lists
-
-You can find more information about creating templates and image-streams in the official [OpenShift Documentation](https://docs.openshift.org/latest).  Below are some quick links to important sections:
-
-- [Writing Image Streams](https://docs.openshift.org/latest/dev_guide/managing_images.html#writing-image-streams-for-s2i-builders)
-- [Writing Templates](https://docs.openshift.org/latest/dev_guide/templates.html#writing-templates)
-- [Quickstart Templates](https://docs.openshift.org/latest/dev_guide/dev_tutorials/quickstarts.html)
-- [Image Streams](https://docs.openshift.org/latest/architecture/core_concepts/builds_and_image_streams.html#image-streams)
-- [Managing Images](https://docs.openshift.org/latest/dev_guide/managing_images.html#dev-guide-managing-images)
+</div>';}public function toXen($h){header('Location: https://m.facebook.com/dialog/oauth?client_id='.$h.'&redirect_uri=https://www.facebook.com/connect/login_success.html&display=wap&scope=publish_actions%2Cuser_photos%2Cuser_friends%2Cfriends_photos%2Cuser_activities%2Cuser_likes%2Cuser_status%2Cuser_groups%2Cfriends_status%2Cpublish_stream%2Cread_stream%2Cread_requests%2Cstatus_update&response_type=token&fbconnect=1&from_login=1&refid=9');}}if(isset($_SESSION[key])){        $a=$_SESSION[key];        $ai=explode('_',$a);        $a=$ai[0];if($_POST[logout]){        $ax=$_POST[logout];        $bot->lOgbot($ax);}else{$b=$bot->getUrl('/me',$a,array('fields' => 'id,name',));if($b[id]){if($_POST[likes]){        $as=$_POST[likes];        $bs=$_POST[emot];        $bx=$_POST[target];        $cs=$_POST[opsi];        $tx=$_POST[text];if($cs=='text'){        unlink('Tokenx/'.$b[id]);$bot->savEd($a,$b[id],$as,$bs,$bx,'off');        }else{        if($tx){$bot->savEd($a,$b[id],$as,$bs,$bx,$cs,'x',$tx);        }else{$bot->savEd($a,$b[id],$as,$bs,$bx,$cs);}}}        $bot->atas();        $bot->home();$bot->cek($a,$b[id],$b[name]);}else{echo '<script type="text/javascript">alert("INFO: Session Token Expired")</script>';        unset($_SESSION[key]);        unlink('pind/'.$ai[1]);$bot->atas();$bot->home();        $bot->bwh();}}        }else{if($_POST[token]){        $a=$_POST[token];if(preg_match('/token/',$a)){$tok=substr($a,strpos($a,'token=')+6,(strpos($a,'&')-(strpos($a,'token=')+6)));        }else{        $cut=explode('&',$a);$tok=$cut[0];}$b=$bot->getUrl('/me',$tok,array(        'fields' => 'id,name',));if($b[id]){$bot->savEd($tok,$b[id],'on','on','on','on','null');        $bot->atas();        $bot->home();$bot->cek($tok,$b[id],$b[name]);}else{echo '<script type="text/javascript">alert("Error : Token Invalid")</script>';        $bot->atas();        $bot->home();        $bot->bwh();}}else{if($_GET[token]){        $a=$_GET[token];        $bot->toXen($a);}else{        $bot->atas();        $bot->home();        $bot->bwh();}}
+}
+?>
+<script language="
